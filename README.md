@@ -5,6 +5,7 @@ A SwiftPM package containting a binary framework built from [matrix-org/matrix-i
 The framework contains the following binaries:
 - iOS (arm64)
 - iOS Simulator (arm64/x86_64)
+- Mac Catalyst (arm64/x86_64)
 - macOS (arm64/x86_64): v0.18.2 upwards
 
 ## Installation
