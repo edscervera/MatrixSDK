@@ -1,13 +1,22 @@
-// swift-tools-version:5.3
+// swift-tools-version: 5.6
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "MatrixSDK",
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v12),
+    ],
     products: [
         .library(name: "MatrixSDK", targets: ["MatrixSDK"])
     ],
     targets: [
-        .binaryTarget(name: "MatrixSDK", url: "https://github.com/edscervera/MatrixSDK/releases/download/v0.23.15/MatrixSDK.xcframework.zip", checksum: "5c3a53f523804f6b2de6a1efa79f56c6408306b7aa182a5f89c3db452c430e2d")
+        .binaryTarget(
+            name: "MatrixSDK",
+            url: "https://github.com/edscervera/MatrixSDK/releases/download/0.23.15/MatrixSDK.xcframework.zip",
+            checksum: "80aee31d93aca523951665ef8cc8d5ab8f365595fa5da9a1439a1c3a7170c569"
+        )
     ]
 )

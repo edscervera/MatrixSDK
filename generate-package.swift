@@ -2,17 +2,28 @@ import Foundation
 
 func packageString(url: String, checksum: String) -> String {
     """
-    // swift-tools-version:5.3
+    // swift-tools-version:5.6
 
     import PackageDescription
 
     let package = Package(
         name: "MatrixSDK",
+        platforms: [
+            .iOS(.v15),
+            .macOS(.v12),
+        ],
         products: [
-            .library(name: "MatrixSDK", targets: ["MatrixSDK"])
+            .library(
+                name: "MatrixSDK",
+                targets: ["MatrixSDK"]
+            )
         ],
         targets: [
-            .binaryTarget(name: "MatrixSDK", url: "\(url)", checksum: "\(checksum)")
+            .binaryTarget(
+                name: "MatrixSDK",
+                url: "\(url)",
+                checksum: "\(checksum)"
+            )
         ]
     )
     
