@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(
             name: "MatrixSDK",
             url: "https://github.com/edscervera/MatrixSDK/releases/download/v0.23.15/MatrixSDK.xcframework.zip",
-            checksum: "e5a0004f44e740f26b876298379ee6cc682c8c85dc00d1288b6ae6af7e0a0c49"
+            checksum: "b111eb6f2bc13a650ec7a03b4ab4f2b2090adc53f35fa3c9cfe638d46bb0e259"
         )
     ]
 )
